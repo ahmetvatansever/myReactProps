@@ -2,8 +2,9 @@ import React from 'react'
 import './App.css'
 
 /**
-1- props => parametre geçmeyi sağlıyor, props ile aynı anda birden fazla parametre geçilebilir.
-    Bu şekilde tanımlanarak, props içerisinde beklenen parametreler ilgili yerlere yerleştirilir
+1- props => Veri aktarmak için kullanığımız özelliklerin tamamını ifade ediyor.
+   (Bir nevi parametre geçmeyi sağlıyor, props ile aynı anda birden fazla parametre geçilebilir.)
+    Bu şekilde tanımlanarak, props içerisinde beklenen parametreler istenilen yerde kullanılabilir.
       function Not(props) {
       return (
       <div className='not'>
@@ -24,8 +25,8 @@ import './App.css'
           <p>Tarih</p>
       </div>
       }
+
 3-Props için değer gelmezse varsayılan değer atama, örneğin soyad null ise VATANSEVER olsun
-    Propslardaki parametreler isim isim verilerekte tanımlanabilir
       function Not({ad,soyad='VATANSEVER'}) {
       return (
       <div className='not'>
